@@ -1,0 +1,1 @@
+Ce repository git contient divers projets réalisés dans le cadre de la formation "Expert en étude et développement du SI".
