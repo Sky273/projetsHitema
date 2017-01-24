@@ -12,6 +12,7 @@
         <property name="connection.pool_size">30</property>
 		<property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
         <property name="current_session_context_class">thread</property>
+        <property name="hibernate.connection.autocommit">true</property> 
 
         <!-- Disable the second-level cache  -->
         <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
