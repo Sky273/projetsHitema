@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14870624656470" configfile="/SynchAndroid2/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="72" y="96" id="pf14872516063370" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14872516063622 pf14872651768066 pf14873286443490" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="failure.xhtml" x="36" y="240" id="pf14872516063624" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf14872516063622" path="/failure.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="faces/commandes" id="pf14872651768077" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14872651768066" path="/faces/commandes.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="faces/Authentification" id="pf14873286443491" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf14873286443490" path="/faces/Authentification.jsp"/>
+  <links id="pf14872516063622" target="pf14872516063624" source="pf14872516063370" outcome="failure"/>
+  <links id="pf14872651768066" target="pf14872651768077" source="pf14872516063370" outcome="success"/>
+  <links id="pf14873286443490" target="pf14873286443491" source="pf14872516063370" outcome="administration"/>
+</pageflow:Pageflow>

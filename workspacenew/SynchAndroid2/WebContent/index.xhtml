@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<h:body>
+ 		<style>
+			form {
+			    border: 3px solid #f1f1f1;
+			}
+			
+			input[type=text], input[type=password] {
+			    width: 100%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    box-sizing: border-box;
+			}
+			
+			button {
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 14px 20px;
+			    margin: 8px 0;
+			    border: none;
+			    cursor: pointer;
+			    width: 100%;
+			}
+			
+			.cancelbtn {
+			    width: auto;
+			    padding: 10px 18px;
+			    background-color: #f44336;
+			}
+			
+			.imgcontainer {
+			    text-align: center;
+			    margin: 24px 0 12px 0;
+			}
+			
+			img.avatar {
+			    width: 40%;
+			    border-radius: 50%;
+			}
+			
+			.container {
+			    padding: 16px;
+			}
+			
+			span.psw {
+			    float: right;
+			    padding-top: 16px;
+			}
+			
+			/* Change styles for span and cancel button on extra small screens */
+			@media screen and (max-width: 300px) {
+			    span.psw {
+			       display: block;
+			       float: none;
+			    }
+			    .cancelbtn {
+			       width: 100%;
+			    }
+			}
+		</style>
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<img src="logo_salespro_transp.png"  class="pull-right"  width="200" height="50" style="background-color: #e3f2fd;" />
+		</nav>		
+		<h:form id="loginForm">
+			<h:outputLabel value="username " />
+			<h:inputText value="#{loginBean.username}" />
+			<br />
+			<h:outputLabel value="password" />
+			<h:inputSecret value="#{loginBean.password}"></h:inputSecret>
+			<h:commandButton value="Login" class="cancelbtn" background-color="#e3f2fd" action="#{loginBean.login}"></h:commandButton>
+		</h:form>
+	</h:body>
+</html>
